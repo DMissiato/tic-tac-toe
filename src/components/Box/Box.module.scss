@@ -6,7 +6,21 @@
     text-align: center;
     max-height: variables.$boxSize;
     max-width: variables.$boxSize;
-    line-height: calc(variables.$boxSize - ((variables.$boxSize / 10) * 3));
     border: 1px solid grey;
+    line-height: calc(variables.$boxSize - ((variables.$boxSize / 10) * 3));
     font-size: variables.$boxSize;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover
+    {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    &.valued
+    {
+        cursor: default;
+        transform: none;
+    }
 }

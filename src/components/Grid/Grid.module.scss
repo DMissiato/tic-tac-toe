@@ -10,6 +10,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: variables.$gap;
     outline: 3px solid black;
+    overflow: hidden;
 }
 
 button

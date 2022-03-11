@@ -5,7 +5,7 @@ const Box = ({ handleClick, value }) =>
 {
 
     return (
-        <div onClick={handleClick} className={styles.wrapper}>
+        <div onClick={handleClick} className={`${styles.wrapper}${value ? ` ${styles.valued}` : ""}`}>
             {value}
         </div>
     );
