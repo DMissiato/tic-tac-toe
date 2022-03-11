@@ -48,7 +48,7 @@ const Grid = () =>
         {
             setIsGameOver(true);
         }
-    }, [isTurnX]);
+    }, [isTurnX, values]);
 
     useEffect(() => 
     {
