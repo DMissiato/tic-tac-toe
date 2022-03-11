@@ -1,0 +1,12 @@
+
+@use '../../libs/variables.scss';
+
+.wrapper
+{
+    text-align: center;
+    max-height: variables.$boxSize;
+    max-width: variables.$boxSize;
+    line-height: calc(variables.$boxSize - ((variables.$boxSize / 10) * 3));
+    border: 1px solid grey;
+    font-size: variables.$boxSize;
+}
